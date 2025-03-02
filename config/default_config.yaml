@@ -1,0 +1,89 @@
+# Default configuration for Stable Diffusion Textual Inversion
+
+# Base model to use
+pretrained_model_name_or_path: "stabilityai/stable-diffusion-2"
+
+# Training settings
+training:
+  learning_rate: 5.0e-4
+  scale_lr: true
+  max_train_steps: 2000
+  save_steps: 250
+  train_batch_size: 4
+  gradient_accumulation_steps: 1
+  gradient_checkpointing: true
+  mixed_precision: "fp16"
+  seed: 42
+  output_dir: "sd-concept-output"
+
+# Data settings
+data:
+  size: 512
+  center_crop: false
+  repeats: 100
+  flip_p: 0.5
+
+# Concept settings
+concept:
+  what_to_teach: "object"  # [object, style]
+  placeholder_token: "<cat-toy>"
+  initializer_token: "toy"
+
+# Templates for training
+templates:
+  object:
+    - "a photo of a {}"
+    - "a rendering of a {}"
+    - "a cropped photo of the {}"
+    - "the photo of a {}"
+    - "a photo of a clean {}"
+    - "a photo of a dirty {}"
+    - "a dark photo of the {}"
+    - "a photo of my {}"
+    - "a photo of the cool {}"
+    - "a close-up photo of a {}"
+    - "a bright photo of the {}"
+    - "a cropped photo of a {}"
+    - "a photo of the {}"
+    - "a good photo of the {}"
+    - "a photo of one {}"
+    - "a close-up photo of the {}"
+    - "a rendition of the {}"
+    - "a photo of the clean {}"
+    - "a rendition of a {}"
+    - "a photo of a nice {}"
+    - "a good photo of a {}"
+    - "a photo of the nice {}"
+    - "a photo of the small {}"
+    - "a photo of the weird {}"
+    - "a photo of the large {}"
+    - "a photo of a cool {}"
+    - "a photo of a small {}"
+  style:
+    - "a painting in the style of {}"
+    - "a rendering in the style of {}"
+    - "a cropped painting in the style of {}"
+    - "the painting in the style of {}"
+    - "a clean painting in the style of {}"
+    - "a dirty painting in the style of {}"
+    - "a dark painting in the style of {}"
+    - "a picture in the style of {}"
+    - "a cool painting in the style of {}"
+    - "a close-up painting in the style of {}"
+    - "a bright painting in the style of {}"
+    - "a cropped painting in the style of {}"
+    - "a good painting in the style of {}"
+    - "a close-up painting in the style of {}"
+    - "a rendition in the style of {}"
+    - "a nice painting in the style of {}"
+    - "a small painting in the style of {}"
+    - "a weird painting in the style of {}"
+    - "a large painting in the style of {}"
+
+# Inference settings
+inference:
+  prompt: "a <cat-toy> inside ramen-bowl"
+  num_samples: 2
+  num_rows: 1
+  guidance_scale: 7.5
+  num_inference_steps: 30
