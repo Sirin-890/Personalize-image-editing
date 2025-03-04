@@ -94,41 +94,14 @@ Modify the templates in the configuration file to create more diverse training p
 
 While the current implementation supports single-concept training, the modular design allows for future expansion to multi-concept learning.
 
-## Troubleshooting
 
-- Ensure you have a CUDA-compatible GPU
-- Check that all dependencies are correctly installed
-- Verify image format and quality of training images
-
-## Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## Acknowledgments
 
 - [Hugging Face Diffusers](https://github.com/huggingface/diffusers)
 - [Textual Inversion Paper](https://textual-inversion.github.io/)
 
-## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
 
-## Citation
 
-If you use this project in your research, please cite:
-
-```bibtex
-@software{textual_inversion_toolkit,
-  title = {Stable Diffusion Textual Inversion Toolkit},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/stable-diffusion-textual-inversion}
-}
-```
 
