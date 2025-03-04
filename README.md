@@ -4,15 +4,8 @@
 
 This project provides a comprehensive toolkit for training and using Textual Inversion with Stable Diffusion models. Textual Inversion is a technique that allows you to teach a Stable Diffusion model new concepts using just a few example images.
 
-![Textual Inversion Concept](https://textual-inversion.github.io/static/images/editing/colorful_teapot.JPG)
 
-## Features
 
-- 🖼️ Train custom concepts with just 3-5 images
-- 🤖 Support for both object and style learning
-- 📊 Flexible configuration options
-- 🚀 Easy-to-use inference pipeline
-- 🔧 Modular and extensible design
 
 ## Installation
 
