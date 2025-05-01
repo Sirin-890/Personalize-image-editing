@@ -17,4 +17,3 @@ requests==2.32.3
 urllib3==2.3.0
 importlib-metadata==8.6.1
 typing-extensions==4.12.2
-
