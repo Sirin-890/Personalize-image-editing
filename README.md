@@ -20,7 +20,7 @@ This project provides a comprehensive toolkit for training and using Textual Inv
 
 ```bash
 git clone [https://github.com/Sirin-890/Personalize-image-editing]
-cd stable-diffusion-textual-inversion
+cd Personalize-image-editing
 ```
 
 ### Install Dependencies
