@@ -19,7 +19,7 @@ This project provides a comprehensive toolkit for training and using Textual Inv
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/stable-diffusion-textual-inversion.git
+git clone https://github.com/Sirin-890/stable-diffusion-textual-inversion.git
 cd stable-diffusion-textual-inversion
 ```
 
